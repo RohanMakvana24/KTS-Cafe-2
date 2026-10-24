@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KT's Cafe — Pure Vegetarian Cafe &amp; Fast Food in Rajkot</title>
+    <meta name="description" content="Discover pure vegetarian street food, pizzas, Maggies, burgers, and thick shakes at KT's Cafe, Dr. Yagnik Road, Rajkot. Fresh cravings made daily." />
+    <meta name="theme-color" content="#050708" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Anti-FOUC Theme Pre-Init -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('kts_cafe_theme');
+          var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+          if (saved === 'light' || (!saved && prefersLight)) {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.style.colorScheme = 'dark';
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="restaurant.restaurant" />
+    <meta property="og:site_name" content="KT's Cafe" />
+    <meta property="og:title" content="KT's Cafe — Pure Vegetarian Cafe &amp; Fast Food in Rajkot" />
+    <meta property="og:description" content="Discover pure vegetarian street food, pizzas, Maggies, burgers, and thick shakes at KT's Cafe, Dr. Yagnik Road, Rajkot. Fresh cravings made daily." />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KT's Cafe — Pure Vegetarian Cafe &amp; Fast Food in Rajkot" />
+    <meta name="twitter:description" content="Discover pure vegetarian street food, pizzas, Maggies, burgers, and thick shakes at KT's Cafe, Dr. Yagnik Road, Rajkot. Fresh cravings made daily." />
+
+    <!-- Schema.org Restaurant & Cafe Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "KT's Cafe",
+      "description": "Pure vegetarian cafe and street food restaurant in Rajkot, Gujarat serving artisanal Maggies, wood-fired styled pizzas, cold shakes, and classic street snacks.",
+      "telephone": "+919727747744",
+      "servesCuisine": [
+        "Pure Vegetarian",
+        "Street Food",
+        "Indian Fast Food",
+        "Pizza",
+        "Noodles"
+      ],
+      "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Credit Card, Debit Card",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Opp. Imperial Palace Hotel, Dr. Yagnik Road, Jagnath Plot",
+        "addressLocality": "Rajkot",
+        "addressRegion": "Gujarat",
+        "postalCode": "360001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.2965,
+        "longitude": 70.7984
+      },
+      "hasMenu": "#menu",
+      "sameAs": [
+        "https://www.instagram.com/kts_cafe/"
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#050708] text-white antialiased selection:bg-[#FFDD17] selection:text-[#050708] overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

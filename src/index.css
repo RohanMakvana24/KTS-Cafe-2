@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "./styles/variables.css";
+@import "./styles/global.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-yellow: #FFDD17;
+  --color-accent-red: #E01E25;
+  --color-premium-black: #050708;
+  --color-veg-green: #00843D;
+  --color-white: #FFFFFF;
+
+  --color-brand-yellow: #FFDD17;
+  --color-brand-red: #E01E25;
+  --color-brand-black: #050708;
+  --color-brand-green: #00843D;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}

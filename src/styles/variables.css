@@ -1,0 +1,143 @@
+:root, html.dark {
+  /* ==========================================================================
+     KT's Cafe — Official Brand Colors
+     ========================================================================== */
+  --color-primary-yellow: #FFDD17;
+  --color-accent-red: #E01E25;
+  --color-premium-black: #050708;
+  --color-veg-green: #00843D;
+  --color-white: #FFFFFF;
+
+  /* ==========================================================================
+     Surface & Background Tokens (Dark Mode)
+     ========================================================================== */
+  --bg-page: #050708;
+  --bg-subtle: #090C12;
+  --bg-elevated: #0D1016;
+  --bg-card: #0E131C;
+  --bg-card-alt: #141A26;
+  --bg-navbar: rgba(5, 7, 8, 0.92);
+  --bg-glass: rgba(13, 16, 22, 0.82);
+
+  --color-surface-base: #050708;
+  --color-surface-subtle: #0D1015;
+  --color-surface-elevated: #141923;
+  --color-surface-card: #171E2B;
+  --color-surface-card-hover: #1F2839;
+  --color-surface-light: #F8F9FA;
+  --color-surface-light-card: #FFFFFF;
+  --color-surface-overlay: rgba(5, 7, 8, 0.82);
+
+  /* ==========================================================================
+     Text Hierarchy Tokens (Dark Mode)
+     ========================================================================== */
+  --text-main: #FFFFFF;
+  --text-body: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-subtle: #64748B;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  --color-text-dark: #050708;
+  --color-text-dark-secondary: #475569;
+
+  /* ==========================================================================
+     Border & Divider Tokens (Dark Mode)
+     ========================================================================== */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-card: rgba(255, 255, 255, 0.1);
+
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-medium: rgba(255, 255, 255, 0.16);
+  --color-border-yellow: rgba(255, 221, 23, 0.3);
+  --color-border-red: rgba(224, 30, 37, 0.3);
+  --color-border-light: #E2E8F0;
+
+  /* ==========================================================================
+     Shadow Tokens (Dark Mode)
+     ========================================================================== */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --shadow-glow-yellow: 0 0 25px -5px rgba(255, 221, 23, 0.28);
+  --shadow-glow-red: 0 0 25px -5px rgba(224, 30, 37, 0.28);
+  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.6);
+
+  /* ==========================================================================
+     Typography Families
+     ========================================================================== */
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* ==========================================================================
+     Radius & Spacing Standards
+     ========================================================================== */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  --max-width-container: 1280px;
+}
+
+html.light {
+  /* ==========================================================================
+     Surface & Background Tokens (Light Mode - Appetizing Warm Artisanal Cream)
+     ========================================================================== */
+  --bg-page: #FDFBF7;
+  --bg-subtle: #F6F2E9;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-alt: #F8F5ED;
+  --bg-navbar: rgba(253, 251, 247, 0.94);
+  --bg-glass: rgba(255, 255, 255, 0.88);
+
+  --color-surface-base: #FDFBF7;
+  --color-surface-subtle: #F6F2E9;
+  --color-surface-elevated: #FFFFFF;
+  --color-surface-card: #FFFFFF;
+  --color-surface-card-hover: #F8F5ED;
+  --color-surface-light: #F8F9FA;
+  --color-surface-light-card: #FFFFFF;
+  --color-surface-overlay: rgba(253, 251, 247, 0.9);
+
+  /* ==========================================================================
+     Text Hierarchy Tokens (Light Mode)
+     ========================================================================== */
+  --text-main: #11161F;
+  --text-body: #374151;
+  --text-muted: #596579;
+  --text-subtle: #7A8699;
+
+  --color-text-primary: #11161F;
+  --color-text-secondary: #4B5565;
+  --color-text-muted: #6B7280;
+  --color-text-dark: #050708;
+  --color-text-dark-secondary: #475569;
+
+  /* ==========================================================================
+     Border & Divider Tokens (Light Mode)
+     ========================================================================== */
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-medium: rgba(0, 0, 0, 0.14);
+  --border-card: rgba(0, 0, 0, 0.09);
+
+  --color-border-subtle: rgba(0, 0, 0, 0.08);
+  --color-border-medium: rgba(0, 0, 0, 0.14);
+  --color-border-yellow: rgba(245, 158, 11, 0.4);
+  --color-border-red: rgba(224, 30, 37, 0.25);
+  --color-border-light: #E7E1D4;
+
+  /* ==========================================================================
+     Shadow Tokens (Light Mode)
+     ========================================================================== */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 24px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}

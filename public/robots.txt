@@ -1,0 +1,6 @@
+# Robots.txt for KT's Cafe Rajkot
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: /sitemap.xml

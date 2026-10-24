@@ -1,0 +1,154 @@
+@import "./variables.css";
+
+/* Base Resets & Font Smoothing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Lenis Smooth Scroll Foundation (Matches codeofsagar.in momentum scroll) */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+html.dark {
+  color-scheme: dark;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+}
+
+html.light {
+  color-scheme: light;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Headings inherit Poppins */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Focus Visible Accessible Styling */
+:focus-visible {
+  outline: 2px solid var(--color-primary-yellow);
+  outline-offset: 3px;
+}
+
+/* Custom Scrollbar for sleek cafe aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #050708;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #1e2430;
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-yellow);
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #F3EFE6;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #D4CDBC;
+  border-radius: 4px;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Indian Veg Standard Icon utility */
+.veg-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--color-veg-green);
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.veg-indicator::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-veg-green);
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   Smooth Infinite Vertical Marquee Animation (Reviews Stream)
+   - Zero-jump seamless loop
+   - Pauses on hover/touch for comfortable reading
+   - GPU-accelerated translate3d
+   ========================================================================== */
+@keyframes marquee-vertical {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--marquee-duration, 32s) linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Pause smoothly on column hover */
+.marquee-container:hover .animate-marquee-vertical,
+.animate-marquee-vertical:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-vertical {
+    animation-duration: 90s;
+  }
+}
+
